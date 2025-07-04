@@ -8,25 +8,27 @@ import ProjectSection from "./components/ProjectSection";
 import ContactSection from "./components/Contact";
 import FooterSection from "./components/FooterSection";
 
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 function App() {
   const [isVisible, setIsVisible] = useState(true);
-  // const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  
 
  
-
+ useEffect(() => {
+    // Inisialisasi AOS
+    Aos.init({
+      duration: 1000,  // Durasi animasi dalam milidetik
+      easing: 'ease-out',  // Jenis easing
+      once: true,  // Animasi hanya sekali ketika elemen masuk viewport
+    });
+  }, []);  
 
   return (
     <div className="min-h-screen bg-gray-900 overflow-x-hidden">
-      {/* Floating cursor effect */}
-      <div
-        className="fixed w-6 h-6 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full pointer-events-none z-50 mix-blend-screen transition-transform duration-150 ease-out"
-        style={{
-          // left: mousePosition.x - 12,
-          // top: mousePosition.y - 12,
-          // transform: `scale(${mousePosition.x > 0 ? 1 : 0})`,
-        }}
-      />
-
+ 
+     
       {/* Navigation */}
       <Navigation />
 

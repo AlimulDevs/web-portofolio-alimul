@@ -5,36 +5,40 @@ const ContactSection = () => {
   return (
    <section id="contact" className="py-24 bg-gray-900">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-full px-6 py-3 mb-8">
+          <div data-aos="fade-up" className="inline-flex items-center space-x-2 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-full px-6 py-3 mb-8">
             <Mail className="w-5 h-5" />
             <span className="font-bold">Let's Connect!</span>
           </div>
           
-          <h2 className="text-5xl sm:text-6xl font-black text-white mb-8">
+          <h2 className="text-5xl sm:text-6xl font-black text-white mb-8" data-aos="fade-up">
             Ready to
             <span className="block bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
               Collaborate?
             </span>
           </h2>
           
-          <p className="text-xl text-gray-300 mb-16 max-w-3xl mx-auto leading-relaxed">
+          <p data-aos="fade-down" className="text-xl text-gray-300 mb-16 max-w-3xl mx-auto leading-relaxed">
             I'm always open to new opportunities and collaborations. Let's chat about your next project!
           </p>
           
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-16" >
             <a 
-              href="mailto:contact@nurhaq.dev"
+            data-aos="fade-up-right"
+            data-aos-duration="500"
+              href="mailto:alimuldev@gmail.com"
               className="group bg-gray-800 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-700 hover:border-gray-600"
             >
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-200">
+              <div className="w-16 h-16 bg-gradient-to-br from-green-600 to-blue-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-200">
                 <Mail className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-bold text-white mb-3">Email</h3>
-              <p className="text-gray-400 font-medium">contact@nurhaq.dev</p>
+              <p className="text-gray-400 font-medium">alimuldev@gmail.com</p>
             </a>
             
             <a 
-              href="https://linkedin.com/in/nuralimulhaq"
+                data-aos="fade-up-right"
+            data-aos-duration="1000"
+              href="https://www.linkedin.com/in/nur-alimul-haq-2b9a2525a/"
               target="_blank"
               rel="noopener noreferrer"
               className="group bg-gray-800 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-700 hover:border-gray-600"
@@ -43,11 +47,13 @@ const ContactSection = () => {
                 <Linkedin className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-bold text-white mb-3">LinkedIn</h3>
-              <p className="text-gray-400 font-medium">linkedin.com/in/nuralimulhaq</p>
+              <p className="text-gray-400 font-medium">Nur Alimul Haq</p>
             </a>
             
             <a 
-              href="https://github.com/nuralimulhaq"
+                data-aos="fade-up-right"
+            data-aos-duration="1500"
+              href="https://github.com/AlimulDevs"
               target="_blank"
               rel="noopener noreferrer"
               className="group bg-gray-800 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-700 hover:border-gray-600 sm:col-span-2 lg:col-span-1"
@@ -56,11 +62,11 @@ const ContactSection = () => {
                 <Github className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-bold text-white mb-3">GitHub</h3>
-              <p className="text-gray-400 font-medium">github.com/nuralimulhaq</p>
+              <p className="text-gray-400 font-medium">Alimul Devs</p>
             </a>
           </div>
           
-          <div className="bg-gray-800 rounded-3xl p-10 shadow-2xl border border-gray-700">
+          <div className="bg-gray-800 rounded-3xl p-10 shadow-2xl border border-gray-700" data-aos="flip-up">
             <h3 className="text-3xl font-bold text-white mb-8">Let's Build Something Amazing</h3>
             <form className="space-y-6">
               <div className="grid sm:grid-cols-2 gap-6">
@@ -82,7 +88,7 @@ const ContactSection = () => {
               ></textarea>
               <button 
                 type="submit"
-                className="w-full bg-gradient-to-r from-blue-500 via-purple-500 to-cyan-500 text-white py-4 rounded-2xl font-bold text-lg hover:scale-105 transition-all duration-200 shadow-xl hover:shadow-2xl flex items-center justify-center space-x-2"
+                className="w-full bg-gradient-to-r from-green-600 via-blue-500 to-cyan-500 text-white py-4 rounded-2xl font-bold text-lg hover:scale-105 transition-all duration-200 shadow-xl hover:shadow-2xl flex items-center justify-center space-x-2"
               >
                 <span>Send Message</span>
                 <ArrowRight className="w-5 h-5" />
