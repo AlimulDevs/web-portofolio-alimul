@@ -47,7 +47,7 @@ function AboutSection() {
                 <div className="bg-gray-800 rounded-2xl p-8 space-y-6">
                   <div className="flex items-center justify-center">
                     <div className="w-32 h-32 bg-gradient-to-br from-green-600 via-blue-500 to-cyan-500 rounded-full flex items-center justify-center text-4xl font-black text-white">
-                      NAH
+                      AL
                     </div>
                   </div>
                   
