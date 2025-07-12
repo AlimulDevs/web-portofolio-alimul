@@ -7,5 +7,5 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
-  base: '/web-portofolio-alimul/',  // Ganti dengan nama repository kamu
+  base: 'https://alimuldevs.github.io/web-portofolio-alimul',  // Ganti dengan nama repository kamu
 });
