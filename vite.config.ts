@@ -7,4 +7,5 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
+  base: '/web-portofolio-alimul/',  // Ganti dengan nama repository kamu
 });
