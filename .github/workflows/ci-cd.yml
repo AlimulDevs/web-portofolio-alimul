@@ -1,0 +1,41 @@
+name: CI/CD for Vite React App
+
+# Trigger workflow ketika ada perubahan di branch 'main'
+on:
+  push:
+    branches:
+      - main  # Workflow ini hanya akan dijalankan pada push ke branch main
+  pull_request:
+    branches:
+      - main  # Workflow ini juga akan dijalankan saat ada pull request ke branch main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # Menggunakan runner Ubuntu untuk menjalankan job
+
+    steps:
+      # Checkout kode dari repository
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # Set up Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'  # Ganti dengan versi Node.js yang sesuai dengan proyek kamu
+
+      # Install dependencies
+      - name: Install dependencies
+        run: npm install  # Menjalankan npm install untuk menginstal dependencies
+
+      # Build the app
+      - name: Build the app
+        run: npm run build  # Menjalankan npm run build untuk membangun aplikasi dengan Vite
+
+      # Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages  # Menentukan branch tempat hasil build akan dideploy
+          folder: dist      # Folder build hasil dari npm run build
+          token: ${{ secrets.GITHUB_TOKEN }}  # Token GitHub untuk autentikasi (otomatis tersedia)
