@@ -32,7 +32,7 @@ function App() {
       {/* Navigation */}
       <Navigation />
 
-      {/* Hero Section */}
+      {/* Hero Sections */}
       <HeroSection isVisible={isVisible}  />
 
       {/* About Section */}
