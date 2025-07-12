@@ -32,7 +32,7 @@ jobs:
       - name: Build the app
         run: npm run build  # Menjalankan npm run build untuk membangun aplikasi dengan Vite
 
-      # Deploy to GitHub Pages
+      # Deploy to GitHub Pagess
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
