@@ -12,6 +12,7 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 
 function App() {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [isVisible, setIsVisible] = useState(true);
   
 
@@ -29,25 +30,24 @@ function App() {
     <div className="min-h-screen bg-gray-900 overflow-x-hidden">
  
      
-      {/* Navigation */}
+
       <Navigation />
 
-      {/* Hero Sections */}
+
       <HeroSection isVisible={isVisible}  />
 
-      {/* About Section */}
+
       <AboutSection />
 
-      {/* Skills Section */}
+
       <SkillSection />
 
-      {/* Projects Section */}
+  
       <ProjectSection />
 
-      {/* Contact Section */}
       <ContactSection />
 
-      {/* Footer */}
+  
       <FooterSection />
     </div>
   );
